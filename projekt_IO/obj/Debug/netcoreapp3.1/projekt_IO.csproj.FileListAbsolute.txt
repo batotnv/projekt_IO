@@ -1,0 +1,13 @@
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.exe
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.deps.json
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.runtimeconfig.json
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.runtimeconfig.dev.json
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.dll
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\bin\Debug\netcoreapp3.1\projekt_IO.pdb
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.csprojAssemblyReference.cache
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.AssemblyInfoInputs.cache
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.AssemblyInfo.cs
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.csproj.CoreCompileInputs.cache
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.dll
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.pdb
+C:\Users\Bartosz\Desktop\magisterka 1\Inzynieria oprogramowania\projekt_IO\projekt_IO\projekt_IO\obj\Debug\netcoreapp3.1\projekt_IO.genruntimeconfig.cache
