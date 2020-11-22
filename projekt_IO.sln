@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projekt_IO", "projekt_IO\projekt_IO.csproj", "{850E8574-A4D0-41A9-9EF3-0E88821E7C0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projekt_IO", "projekt_IO\projekt_IO.csproj", "{850E8574-A4D0-41A9-9EF3-0E88821E7C0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{205940D2-EE0A-4720-AC80-A1845F0C6FDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A4374EA6-4F18-4AA4-A149-2C9D1576FA7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +22,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{850E8574-A4D0-41A9-9EF3-0E88821E7C0A} = {205940D2-EE0A-4720-AC80-A1845F0C6FDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CC422B0-C384-4C20-ACE5-E83FB5A05173}
