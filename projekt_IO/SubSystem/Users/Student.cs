@@ -1,6 +1,7 @@
 ﻿using projekt_IO.SubSystem.Documents;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace projekt_IO.SubSystem.Users
@@ -13,7 +14,6 @@ namespace projekt_IO.SubSystem.Users
         public UniversityEmployee Supervisor { get; protected set; }
         public UniversityEmployee Reviewer { get; protected set; }
 
-       // public Notifier Notifier { get; protected set; }
 
         public Student(string firstname, string lastname, string email, string password, string fieldofstudy, string faculty)
         {
@@ -23,7 +23,6 @@ namespace projekt_IO.SubSystem.Users
             Password = password;
             FieldOfStudy = fieldofstudy;
             Faculty = faculty;
-
         }
 
         public void AddSupervisor(UniversityEmployee universityEmployee)
@@ -35,10 +34,6 @@ namespace projekt_IO.SubSystem.Users
         {
             this.Reviewer = universityEmployee;
         }
-        //public void AddNotifier(Notifier notifier)
-        //{
-        //    this.Notifier = notifier;
-        //}
 
         public void RemoveSupervisor()
         {
@@ -49,11 +44,6 @@ namespace projekt_IO.SubSystem.Users
         {
             this.Reviewer = null;
         }
-
-        //public void RemoveNotifier()
-        //{
-        //    this.Notifier = null;
-        //}
 
 
     }

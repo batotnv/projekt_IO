@@ -14,5 +14,6 @@ namespace projekt_IO.SubSystem.Users
             Email = email;
             Password = password;
         }
+      
     }
 }

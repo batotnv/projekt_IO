@@ -11,9 +11,9 @@ namespace projekt_IO.SubSystem.Documents
         ModifiedByStudent, //zmodyfikowana przez studenta
         ToImprove, //do zmodyfikowania 
         UnderAntiPlagarismSystem, // wyslana do systemu antyplagiatowego
-        WaitingForSupervisorAcceptance, //czekajaca na akceptacje przez promotora
+        WaitingForSupervisorAcceptance, //czekajaca na akceptacje przez promotora (po otrzymaniu reportu)
         ConfirmedBySupervisor, // zatwierdzona
         ReviewedByReviewer, //zrecenzowana
-
+        Finished, //wszystko skonczone
     }
 }

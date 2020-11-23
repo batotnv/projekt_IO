@@ -12,10 +12,5 @@ namespace projekt_IO.SubSystem.Users
         public string Password { get; protected set; }
 
         
-
-        
-
-
-
     }
 }

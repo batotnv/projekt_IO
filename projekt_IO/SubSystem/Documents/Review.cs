@@ -23,7 +23,4 @@ namespace projekt_IO.SubSystem.Documents
 
     }
 
-
-    
-
 }

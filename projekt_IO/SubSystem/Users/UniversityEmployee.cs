@@ -11,7 +11,6 @@ namespace projekt_IO.SubSystem.Users
         public string Faculty { get; protected set; }
 
         public List<Student> SupervisorOf = new List<Student>();
-
         public List<Student> ReviewerOf = new List<Student>();
 
         
@@ -39,8 +38,6 @@ namespace projekt_IO.SubSystem.Users
             this.ReviewerOf.Add(student);
         }
 
-        
-
         public void RemoveSupervisedStudent(Student student)
         {
             this.SupervisorOf.Remove(student);
@@ -51,7 +48,6 @@ namespace projekt_IO.SubSystem.Users
             this.ReviewerOf.Remove(student);
         }
 
-     
 
     }
 }

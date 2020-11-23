@@ -14,8 +14,8 @@ namespace projekt_IO.SubSystem
 
         public Notifier(User user)
         {
-          //  NotifierID = id;
             AttachedUser = user;
+
         }
 
         public void Update(Thesis thesis)
@@ -26,9 +26,11 @@ namespace projekt_IO.SubSystem
             string title = thesis.Title;
             ThesisStatus status = thesis.Status;
 
+            //tresc powiadomienia
             Console.WriteLine("-------------");
             Console.WriteLine("Powiadomienie dla użytkownika: {0} {1}", AttachedUser.FirstName, AttachedUser.LastName);
             Console.WriteLine("Praca dyplomowa: {0} autorstwa: {1} {2} posiada status: {3}", title, author.FirstName, author.LastName, status);
+            Console.WriteLine("-------------");
         }
     }
 

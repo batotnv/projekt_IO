@@ -22,8 +22,8 @@ namespace projekt_IO.SubSystem
                 this._observerList.Remove(observer);
         }
 
-        // powiadamianie obserwatorów o zmianie danych w obserwowanycn podmiocie (Book)
-        // implementacja powiadomenia znajduje się w klasie pochodnej Book
+        // powiadamianie obserwatorów o zmianie danych w obserwowanycn podmiocie (Thesis)
+        // implementacja powiadomenia znajduje się w klasie pochodnej Thesis
         abstract protected void Notify();
     }
 }
