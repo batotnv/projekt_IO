@@ -17,6 +17,18 @@ namespace projekt_IO.SubSystem.Users
 
         public UniversityEmployee(string firstname, string lastname, string email, string password, string academictitle, string faculty)
         {
+            if (firstname == null)
+                throw new ArgumentNullException("First Name cannot be null");
+
+            if (lastname == null)
+                throw new ArgumentNullException("Last Name cannot be null");
+
+            if(email == null || !(email.ToLower().Contains('@')))
+                throw new ArgumentException("Email cannot be null/Email has wrong format ");
+
+            if (password == null)
+                throw new ArgumentNullException("Password cannot be null");
+
             FirstName = firstname;
             LastName = lastname;
             Email = email;
@@ -47,7 +59,7 @@ namespace projekt_IO.SubSystem.Users
         {
             this.ReviewerOf.Remove(student);
         }
-
+        
 
     }
 }

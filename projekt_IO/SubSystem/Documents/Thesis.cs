@@ -14,12 +14,15 @@ namespace projekt_IO.SubSystem.Documents
         public Review Review { get; protected set; }
         public Opinion Opinion { get; protected set; }
         public AntiPlagarismReport AntiPlagarismReport { get; protected set; }
-        public int Mark { get; protected set; }
+        public double Mark { get; protected set; }
         public List<Notifier> Notifiers = new List<Notifier>();
 
 
         public Thesis(string title, Student student)
         {
+            if (title == null)
+                throw new ArgumentNullException("Title cannot be null");
+
             Title = title;
             Author = student;
             Status = ThesisStatus.NotUploaded;
@@ -150,7 +153,11 @@ namespace projekt_IO.SubSystem.Documents
             Console.WriteLine("Praca dyplomowa ukonczona sukcesem!");
             Console.WriteLine("Ocena pracy: {0}", this.Mark);
             this.Status = ThesisStatus.Finished;
+
+            this.Author.GetStudiesResult(this.Mark);
         }
+
+
 
     }
 

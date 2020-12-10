@@ -17,8 +17,8 @@ namespace projekt_IO
             //Student student3 = new Student("Andrzej", "Mrozny", "amrozny@student.agh.edu.pl", "abc", "ZIP", "WZ");
 
             //pracownicy uczelni
-            UniversityEmployee emp1 = new UniversityEmployee("Pan", "Paweł", "ppawel@student.agh.edu.pl", "123", "dr hab", "WZ");
-            UniversityEmployee emp2 = new UniversityEmployee("Pan", "Tomek", "ptomek@student.agh.edu.pl", "456", "prof", "WZ");
+            UniversityEmployee emp1 = new UniversityEmployee("Pan", "Paweł", "ppawel@agh.edu.pl", "123", "dr hab", "WZ");
+            UniversityEmployee emp2 = new UniversityEmployee("Pan", "Tomek", "ptomek@agh.edu.pl", "456", "prof", "WZ");
             //UniversityEmployee emp3 = new UniversityEmployee("Pan", "Henryk", "phenryk@student.agh.edu.pl", "xyz", "prof", "WZ");
 
 

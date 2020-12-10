@@ -10,6 +10,9 @@ namespace projekt_IO.SubSystem.Documents
 
         public AntiPlagarismReport(string text)
         {
+            if (text == null)
+                throw new ArgumentNullException("Text cannot be null");
+
             this.Text = text;
         }
 
