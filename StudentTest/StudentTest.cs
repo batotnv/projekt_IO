@@ -15,6 +15,7 @@ namespace StudentTest
             var TestClass = new Student(null, "Chełmikowska", "fifiq@student.agh.edu.pl", "fifi123", "Informatyka i Ekonometria", "WZ");
 
         }
+
         [TestMethod]
         public void StudentConstructorFirstNameTest()
         {
@@ -98,7 +99,7 @@ namespace StudentTest
         }
 
         [TestMethod]
-        public void AddReviewerrTest()
+        public void AddReviewerTest()
         {
             //arrange
             var StudentTestClass = new Student("Fifi", "Chełmikowska", "fifiqstudent@agh.edu.pl", "fifi123", "Informatyka i Ekonometria", "WZ");

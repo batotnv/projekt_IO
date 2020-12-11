@@ -6,7 +6,10 @@ namespace projekt_IO.SubSystem
 {
     public abstract class Subject
     {
-        protected List<IObserver> _observerList = new List<IObserver>();
+        //protected List<IObserver> _observerList = new List<IObserver>();
+
+        //test
+        public List<IObserver> _observerList = new List<IObserver>();
 
         // dodanie nowego obserwatora
         public void Attach(IObserver observer)

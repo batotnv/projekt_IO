@@ -13,28 +13,51 @@ namespace projekt_IO.SubSystem.Documents
         public Thesis Thesis { get; protected set; }
         public double Mark { get; protected set; }
 
+        private IValidator _validator;
+
+        public Review(IValidator validator)
+        {
+            this._validator = validator;
+        }
+
 
         public Review(string text, UniversityEmployee author, Thesis thesis, double mark)
         {
 
-            if (text == null)
-                throw new ArgumentNullException("Text cannot be null");
+            if (IsReviewCorrect(text, mark) == false)
+                throw new ArgumentException("Please create review again with proper parameter");
+            else
+            {
+                Text = text;
+                Author = author;
+                Thesis = thesis;
+                Mark = mark;
+                
+            }
 
-            if (mark == null)
-                throw new ArgumentNullException("Mark cannot be null");
+        }
 
+        public bool IsReviewCorrect(string text, double mark)
+        {
+            IValidator validator = new MarkValidator();
+            bool isCorrect = validator.IsCorrectMark(mark);
 
-            double [] marks = { 2, 2.5, 3, 3.5, 4, 4.5, 5 };
+            //przy testowaniu za pomoca Moqa
+           // bool isCorrect = this._validator.IsCorrectMark(mark);
 
-            if (!marks.Contains(mark))
-                throw new ArgumentException("Mark is not correct");
-
-            Text = text;
-            Author = author;
-            Thesis = thesis;
-            Mark = mark;
+            if (text == null || isCorrect == false)
+                return false;
+            else
+                return true;
         }
 
     }
+
+
+  
+
+
+    
+
 
 }

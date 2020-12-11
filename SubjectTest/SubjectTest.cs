@@ -1,4 +1,6 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using projekt_IO.SubSystem;
+using projekt_IO.SubSystem.Users;
 
 namespace SubjectTest
 {
@@ -6,8 +8,12 @@ namespace SubjectTest
     public class SubjectTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AttachTest()
         {
+            //arrange
+            
+         
+
         }
     }
 }

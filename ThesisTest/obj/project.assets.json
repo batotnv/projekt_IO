@@ -1634,6 +1634,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "projekt_IO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/projekt_IO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/projekt_IO.dll": {}
+        }
       }
     }
   },
@@ -5705,6 +5715,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "projekt_IO/1.0.0": {
+      "type": "project",
+      "path": "../projekt_IO/projekt_IO.csproj",
+      "msbuildProject": "../projekt_IO/projekt_IO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5712,7 +5727,8 @@
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
-      "coverlet.collector >= 1.2.0"
+      "coverlet.collector >= 1.2.0",
+      "projekt_IO >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5740,7 +5756,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Bartosz\\Desktop\\magisterka 1\\Inzynieria oprogramowania\\projekt_IO\\projekt_IO\\projekt_IO\\projekt_IO.csproj": {
+              "projectPath": "C:\\Users\\Bartosz\\Desktop\\magisterka 1\\Inzynieria oprogramowania\\projekt_IO\\projekt_IO\\projekt_IO\\projekt_IO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

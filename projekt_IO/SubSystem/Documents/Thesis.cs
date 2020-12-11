@@ -17,6 +17,7 @@ namespace projekt_IO.SubSystem.Documents
         public double Mark { get; protected set; }
         public List<Notifier> Notifiers = new List<Notifier>();
 
+      
 
         public Thesis(string title, Student student)
         {

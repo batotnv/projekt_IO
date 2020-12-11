@@ -68,9 +68,11 @@ namespace projekt_IO
             praca1.ToImprove();
             praca2.ToImprove();
             praca1.SendToAntiPlagarism();
+            
 
             Opinion op1 = new Opinion("Super praca", emp1, praca1, 5);
             Review r1 = new Review("Fajna praca", emp2, praca1, 5);
+            
             AntiPlagarismReport anti1 = new AntiPlagarismReport("Wynik: 80%");
 
             praca1.AddAntiPlagarismReport(anti1);

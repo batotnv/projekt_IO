@@ -81,5 +81,39 @@ namespace UniversityEmployeeTest
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void AddSupervisedStudentTest()
+        {
+            //arrange
+            var StudentTestClass = new Student("Fifi", "Chełmikowska", "fifiqstudent@agh.edu.pl", "fifi123", "Informatyka i Ekonometria", "WZ");
+            var SupervisorTestClass = new UniversityEmployee("Pan", "Paweł", "ppawel@agh.edu.pl", "123", "dr hab", "WZ");
+            var expected = true;
+
+
+            SupervisorTestClass.AddSupervisedStudent(StudentTestClass);
+            var actual = SupervisorTestClass.SupervisorOf.Contains(StudentTestClass);
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void AddReviewedStudentTest()
+        {
+            //arrange
+            var StudentTestClass = new Student("Fifi", "Chełmikowska", "fifiqstudent@agh.edu.pl", "fifi123", "Informatyka i Ekonometria", "WZ");
+            var SupervisorTestClass = new UniversityEmployee("Pan", "Paweł", "ppawel@agh.edu.pl", "123", "dr hab", "WZ");
+            var expected = true;
+
+
+            SupervisorTestClass.AddReviewedStudent(StudentTestClass);
+            var actual = SupervisorTestClass.ReviewerOf.Contains(StudentTestClass);
+            Assert.AreEqual(expected, actual);
+
+        }
+
+      
+
+
     }
 }
