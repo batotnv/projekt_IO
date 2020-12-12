@@ -17,7 +17,6 @@ namespace projekt_IO.SubSystem.Users
         public string StudiesResult { get; protected set; }
 
 
-
         public Student(string firstname, string lastname, string email, string password, string fieldofstudy, string faculty)
         {
             if (firstname == null)
@@ -91,8 +90,6 @@ namespace projekt_IO.SubSystem.Users
             }
 
         }
-
-
 
 
     }

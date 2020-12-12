@@ -8,14 +8,11 @@ namespace projekt_IO.SubSystem
 {
     public class Notifier : IObserver
     {
-       // public int NotifierID { get; protected set; }
         public User AttachedUser { get; protected set; }
-        
 
         public Notifier(User user)
         {
             AttachedUser = user;
-
         }
 
         public void Update(Thesis thesis)
@@ -33,7 +30,4 @@ namespace projekt_IO.SubSystem
             Console.WriteLine("-------------");
         }
     }
-
-
-
 }

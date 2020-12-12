@@ -11,9 +11,9 @@ namespace projekt_IO.SubSystem.Users
         public string Faculty { get; protected set; }
 
         public List<Student> SupervisorOf = new List<Student>();
+
         public List<Student> ReviewerOf = new List<Student>();
 
-        
 
         public UniversityEmployee(string firstname, string lastname, string email, string password, string academictitle, string faculty)
         {

@@ -34,7 +34,6 @@ namespace projekt_IO.SubSystem.Documents
                 Mark = mark;
                 
             }
-
         }
 
         public bool IsReviewCorrect(string text, double mark)
@@ -43,7 +42,7 @@ namespace projekt_IO.SubSystem.Documents
             bool isCorrect = validator.IsCorrectMark(mark);
 
             //przy testowaniu za pomoca Moqa
-           // bool isCorrect = this._validator.IsCorrectMark(mark);
+            //bool isCorrect = this._validator.IsCorrectMark(mark);
 
             if (text == null || isCorrect == false)
                 return false;

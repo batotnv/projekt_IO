@@ -25,9 +25,10 @@ namespace ReviewTest
 
         }
 
-
         //moq tests
         //przy uruchomieniu tych testow nalezy zmienic kod w klasie review w metodzie IsReviewCorrect()
+
+        //test czy dziala funkcja IsReviewCorrect
         [TestMethod]
         public void IsReviewCorrectDummyMoq()
         {
@@ -41,6 +42,7 @@ namespace ReviewTest
 
         }
 
+        //test czy funkcja jest wywolywana
         [TestMethod]
         public void IsReviewCorrectMockMoq()
         {
@@ -55,7 +57,7 @@ namespace ReviewTest
 
         }
 
-
+        //test co zwroci funkcja, jesli IsCorrectMark zwraca true
         [TestMethod]
         public void IsReviewCorrectStubMoq()
         {
@@ -67,6 +69,51 @@ namespace ReviewTest
             bool actual = TestClass.IsReviewCorrect("123", 2.5);
 
             Assert.AreEqual(true, actual);
+
+        }
+
+        //test co zwroci funkcja, jesli IsCorrectMark zwraca false
+        [TestMethod]
+        public void IsReviewCorrectStubMoq2()
+        {
+            var mock = new Mock<IValidator>();
+            mock.Setup(x => x.IsCorrectMark(It.IsAny<double>())).Returns(false);
+
+            var TestClass = new Review(mock.Object);
+
+            bool actual = TestClass.IsReviewCorrect("123", 2.5);
+
+            Assert.AreEqual(false, actual);
+
+        }
+
+        //test co zwroci funkcja, jesli IsCorrectMark zwraca true, ale zostal przekazany parametr null
+        [TestMethod]
+        public void IsReviewCorrectStubMoq3()
+        {
+            var mock = new Mock<IValidator>();
+            mock.Setup(x => x.IsCorrectMark(It.IsAny<double>())).Returns(true);
+
+            var TestClass = new Review(mock.Object);
+
+            bool actual = TestClass.IsReviewCorrect(null, 2.5);
+
+            Assert.AreEqual(false, actual);
+
+        }
+
+        
+        [TestMethod]
+        public void IsReviewCorrectTimesNeverMoq()
+        {
+            var mock = new Mock<IValidator>();
+
+            var TestClass = new Review(mock.Object);
+
+            //bool actual = TestClass.IsReviewCorrect("123", 2.5);
+
+            mock.Verify(x => x.IsCorrectMark(2.5), Times.Never);
+            mock.Verify(x => x.IsCorrectMark(It.IsAny<double>()), Times.Never);
 
         }
     }

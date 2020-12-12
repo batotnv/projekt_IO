@@ -8,6 +8,7 @@ namespace projekt_IO
     {
         static void Main(string[] args)
         {
+            //Autorzy: Bartosz Nguyen Van, Bartłomiej Kalata
             //Podsystem składania pracy dyplomowej 
             //Symulacja działania wzorca OBSERWATOR - metoda pull
 
@@ -20,7 +21,6 @@ namespace projekt_IO
             UniversityEmployee emp1 = new UniversityEmployee("Pan", "Paweł", "ppawel@agh.edu.pl", "123", "dr hab", "WZ");
             UniversityEmployee emp2 = new UniversityEmployee("Pan", "Tomek", "ptomek@agh.edu.pl", "456", "prof", "WZ");
             //UniversityEmployee emp3 = new UniversityEmployee("Pan", "Henryk", "phenryk@student.agh.edu.pl", "xyz", "prof", "WZ");
-
 
             //przydzielenie promotorow
             emp1.AddSupervisedStudent(student1);
@@ -47,13 +47,13 @@ namespace projekt_IO
             praca2.RegisterForNotification(emp1);
             Console.ReadKey();
 
-
             Console.WriteLine("==============");
             praca1.Upload(student1);
             Console.WriteLine("==============");
             praca2.Upload(student2);
             Console.ReadKey();
 
+            //wyrejestrowanie wszystkich obserwujacych prace 2
             Console.WriteLine("==============");
             praca2.UnregisterForNotification(student2);
             praca2.UnregisterForNotification(emp1);
@@ -61,6 +61,7 @@ namespace projekt_IO
 
             Console.ReadKey();
 
+            //dalsze zmiany statusu pracy
             Console.WriteLine("==============");
             praca1.Modify(student1);
             praca2.Modify(student2);
@@ -68,20 +69,16 @@ namespace projekt_IO
             praca1.ToImprove();
             praca2.ToImprove();
             praca1.SendToAntiPlagarism();
-            
 
             Opinion op1 = new Opinion("Super praca", emp1, praca1, 5);
             Review r1 = new Review("Fajna praca", emp2, praca1, 5);
-            
-            AntiPlagarismReport anti1 = new AntiPlagarismReport("Wynik: 80%");
+            AntiPlagarismReport anti1 = new AntiPlagarismReport("raport", 5);
 
             praca1.AddAntiPlagarismReport(anti1);
             praca1.AddOpinion(op1);
             praca1.AddReview(r1);
             praca1.CalculateMark();
             Console.ReadKey();
-
-
 
         }
     }

@@ -16,6 +16,5 @@ namespace projekt_IO.SubSystem
             else
                 return true;
         }
-
     }
 }
